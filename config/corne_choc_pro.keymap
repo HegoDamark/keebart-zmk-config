@@ -94,9 +94,9 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TILDE               &kp Q        &kp W           &mt LS(E) E         &kp R             &kp T      &mt F5 F4  &none  &kp Y        &mt LS(U) U               &mt LS(I) I  &mt LS(O) O  &kp LS(NUMBER_2)  &mt RA(APOS) RA(SEMICOLON)
-&kp DEL                 &mt LS(A) A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G      &mt F3 F2  &none  &kp H        &kp J                     &kp K        &mt RALT L   &kp P             &kp RIGHT_BRACKET
-&lt 5 NON_US_BACKSLASH  &kp Z        &kp X           &kp C               &kp V             &kp B                        &kp N        &kp M                     &kp COMMA    &kp DOT      &kp MINUS         &lt 5 SLASH
+&auto_shift TILDE TILDE  &kp Q       &kp W           &mt LEFT_BRACKET E  &kp R             &kp T      &mt F5 F4  &none  &kp Y        &mt POUND U               &mt EQUAL I  &mt SEMI O  &kp LS(NUMBER_2)  &mt RA(APOS) RA(SEMICOLON)
+&kp DEL                  &mt APOS A  &mt LEFT_ALT S  &mt LEFT_CONTROL D  &mt LEFT_SHIFT F  &kp G      &mt F3 F2  &none  &kp H        &kp J                     &kp K        &mt RALT L  &kp P             &kp RIGHT_BRACKET
+&lt 5 NON_US_BACKSLASH   &kp Z       &kp X           &kp C               &kp V             &kp B                        &kp N        &kp M                     &kp COMMA    &kp DOT     &kp MINUS         &lt 5 SLASH
                                                      &lt 4 ESC           &lt 1 SPACE       &lt 3 TAB                    &lt 2 ENTER  &mt LEFT_SHIFT BACKSPACE  &kp LWIN
             >;
         };
