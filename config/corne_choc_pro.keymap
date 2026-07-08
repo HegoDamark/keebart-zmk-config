@@ -149,20 +149,20 @@
         Fn {
             display-name = "Fn";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&none   &kp C_PREV    &kp C_STOP    &kp C_PP          &kp C_NEXT      &kp C_VOLUME_UP    &kp C_BRI_UP  &none  &none      &kp F7         &kp F8        &kp F9  &kp F10  &none
+&trans  &kp LEFT_WIN  &kp LEFT_ALT  &kp LEFT_CONTROL  &kp LEFT_SHIFT  &kp C_VOLUME_DOWN  &kp C_BRI_DN  &none  &none      &kp F4         &kp F5        &kp F6  &kp F11  &none
+&none   &kp K_UNDO    &kp K_CUT     &kp K_COPY        &kp K_PASTE     &kp K_MUTE                              &none      &kp F1         &kp F2        &kp F3  &kp F12  &none
+                                    &trans            &none           &none                                   &kp ENTER  &kp BACKSPACE  &kp LEFT_WIN
             >;
         };
 
         Buttons {
             display-name = "Buttons";
             bindings = <
-&trans     &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3      &bt BT_SEL 4     &bt BT_CLR       &trans  &bt BT_SEL 4     &bt BT_SEL 3      &bt BT_SEL 2  &bt BT_SEL 1  &bt BT_SEL 0  &trans
-&kp LG(L)  &trans        &trans        &trans        &trans            &trans           &rgb_ug RGB_TOG  &trans  &trans           &trans            &trans        &trans        &trans        &kp LG(L)
-&trans     &trans        &trans        &trans        &trans            &trans                                    &trans           &trans            &trans        &trans        &trans        &trans
-                                       &notepad      &kp K_CALCULATOR  &kp PRINTSCREEN                           &kp PRINTSCREEN  &kp K_CALCULATOR  &notepad
+&trans     &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4     &bt BT_CLR       &none  &bt BT_SEL 4     &bt BT_SEL 3       &bt BT_SEL 2       &bt BT_SEL 1   &bt BT_SEL 0   &trans
+&kp LG(L)  &kp LS(LG(C))  &kp LS(LG(E))  &kp LS(LA(LC(M)))  &kp LS(LA(LC(T)))  &trans           &rgb_ug RGB_TOG  &none  &trans           &kp LS(LA(LC(T)))  &kp LS(LA(LC(M)))  &kp LS(LG(E))  &kp LS(LG(C))  &kp LG(L)
+&trans     &trans         &trans         &kp LC(W)          &kp LC(T)          &trans                                   &trans           &kp LC(T)          &kp LC(W)          &trans         &trans         &trans
+                                         &notepad           &kp K_CALCULATOR   &kp PRINTSCREEN                          &kp PRINTSCREEN  &kp K_CALCULATOR   &notepad
             >;
         };
 
