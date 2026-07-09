@@ -88,7 +88,7 @@
             flavor = "tap-preferred";
         };
 
-            td_f2_f3: td_f2_f3 {
+        td_f2_f3: td_f2_f3 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
@@ -197,8 +197,8 @@
             display-name = "Gaming";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp Q   &kp W   &kp E   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp A   &kp S   &kp D   &trans                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
