@@ -75,6 +75,13 @@
             bindings = <&kp NON_US_BACKSLASH &kp DOWN_ARROW>;
             label = "SPACENET_COPY_ABOVE";
         };
+
+        combitech: combitech {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(A) &kp S &kp D &kp R &kp U &kp B &kp A &kp L &kp E &kp LS(I) &kp L &kp LS(N) &kp A &kp N &kp O &kp N2 &kp N2 &kp N0 &kp N6 &kp EXCL>;
+            label = "COMBITECH";
+        };
     };
 
     behaviors {
@@ -186,20 +193,20 @@
         Buttons {
             display-name = "Buttons";
             bindings = <
-&trans     &bt BT_SEL 0          &bt BT_SEL 1   &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4     &bt BT_CLR       &none  &bt BT_SEL 4     &bt BT_SEL 3       &bt BT_SEL 2       &bt BT_SEL 1   &bt BT_SEL 0          &trans
-&kp LG(L)  &kp LS(LG(C))         &kp LS(LG(E))  &kp LS(LA(LC(M)))  &kp LS(LA(LC(T)))  &none            &rgb_ug RGB_TOG  &none  &none            &kp LS(LA(LC(T)))  &kp LS(LA(LC(M)))  &kp LS(LG(E))  &kp LS(LG(C))         &kp LG(L)
-&trans     &spacenet_copy_above  &none          &kp LC(W)          &kp LC(T)          &none                                    &none            &kp LC(T)          &kp LC(W)          &none          &spacenet_copy_above  &trans
-                                                &notepad           &kp K_CALCULATOR   &kp PRINTSCREEN                          &kp PRINTSCREEN  &kp K_CALCULATOR   &notepad
+&combitech  &bt BT_SEL 0          &bt BT_SEL 1   &bt BT_SEL 2       &bt BT_SEL 3       &bt BT_SEL 4     &bt BT_CLR       &none  &bt BT_SEL 4     &bt BT_SEL 3       &bt BT_SEL 2       &bt BT_SEL 1   &bt BT_SEL 0          &combitech
+&kp LG(L)   &kp LS(LG(C))         &kp LS(LG(E))  &kp LS(LA(LC(M)))  &kp LS(LA(LC(T)))  &none            &rgb_ug RGB_TOG  &none  &none            &kp LS(LA(LC(T)))  &kp LS(LA(LC(M)))  &kp LS(LG(E))  &kp LS(LG(C))         &kp LG(L)
+&trans      &spacenet_copy_above  &none          &kp LC(W)          &kp LC(T)          &none                                    &none            &kp LC(T)          &kp LC(W)          &none          &spacenet_copy_above  &trans
+                                                 &notepad           &kp K_CALCULATOR   &kp PRINTSCREEN                          &kp PRINTSCREEN  &kp K_CALCULATOR   &notepad
             >;
         };
 
         Gaming {
             display-name = "Gaming";
             bindings = <
-&trans  &trans  &trans  &trans  &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp Q   &kp W   &kp E      &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp A   &kp S   &kp D      &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &kp SPACE  &trans                  &trans  &trans  &trans
+&none             &kp TILDE  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5  &none  &trans  &trans  &trans  &trans  &trans  &trans
+&kp CAPS          &kp TAB    &kp Q         &kp W         &kp E         &kp R         &kp F   &none  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LEFT_CONTROL  &kp X      &kp A         &kp S         &kp D         &none                        &trans  &trans  &trans  &trans  &trans  &trans
+                                           &kp C         &kp SPACE     &kp V                        &trans  &trans  &trans
             >;
         };
     };
